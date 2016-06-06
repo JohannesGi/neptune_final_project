@@ -1,6 +1,6 @@
 # Neptune Computational Biology - Final Project
 
-# Working with and visualizing cell tracking data
+# Working with cell tracking data
 
 ## Introduction and Goals
 
