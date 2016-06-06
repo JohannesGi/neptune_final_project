@@ -4,7 +4,7 @@
 
 ## Introduction and Goals
 
-The goal of my project is to optimize the work flow with positional data of nuclei (x,y,z, coordinates) obtained from live imaging movies.
+The goal of my project is to find a work flow of how to deal with positional data of migrating and dividing nuclei (x,y,z, coordinates) obtained from live imaging movies of a developing embryo.
 
 The methods I will use to do this are programming with python, which will allow me to pre-process the data (eg filtering it) and create some statistics.
 
