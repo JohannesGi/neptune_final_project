@@ -1,0 +1,26 @@
+In the file, you will see three columns. The first column is for x coordinate, the second is for y and the third is for z coordinates of a nucleus. Each track is separated by two line breaks. "-1.000" means that the algorithm lost the nucleus and the track ended. For example, the first track in the file ends at the time frame 6 (probably, the algorithm failed to detect the nucleus at the frame 6). In some cases, the algorithm starts tracking a newly detected nucleus at the middle of imaging period. In such cases, the track starts "-1.000" and positive values appear in the track at some time point.
+
+
+Hi Johannes,
+
+Thanks for the update. Good to know that you can now visualize cell tracks!
+
+> 1.) The coordinated you sent me appear to be already in um. Is this correct?
+Yes. They are in um.
+
+> 2.) We found 2581 trajectories in the files. Is true that every single one is an attempt to track a nuclei for a certain amount of time?
+Yes. When tracking, the algorithm sometimes loses a nucleus at a certain time frame t due to under-segmentation. In that case, the track stops and I put -1 into its coordinate for the later time t, t+1, t+2.... However, the algorithm may detect correctly that nucleus at the next time frame t+1. Then, the algorithm considers the nucleus as if a newly appearing one and starts tracking it from t+1. I put -1 into its coordinate for 1, 2, 3, .., t. So, when the algorithm loses a nucleus, its trajectory may split into two. That' why the file has so many tracks. So, we may be able to construct a full-length trajectory of a single cell by linking some of these short trajectories in the file.
+
+> 3.) We found a forth column within the trajectory mat file. What does the column 4 stands for?
+Sorry, I forgot to explain it. These are useless numbers. I assigned ID to each nucleus at each time frame to fix bugs when I wrote the program. I kept them just in case. These nuclear IDs are not consistent frame to frame, so they should be ignored.
+
+> 4.) Do you have a code that we might be able to use to implement x, y, z values onto the images?
+Not yet. I think it will be very useful but I haven't done yet.
+
+If you have further questions, please let me know.
+
+I tried nuclear detection using the early embryo movie (part1 movie). I found some problems in applying the algorithm to these images. The algorithm needs to solve a partial differential equation to detect nuclei, and for this, more isotropic voxel would be preferable. However, the part1 movie has a stronger voxel anisotropy than the part2 movie. This makes correct detection of nuclei bit difficult. In addition, spatial resolution of x and y relative to the size of a nucleus is higher and fine structures within a nucleus lead to over-segmentation.
+
+So, because the density of nucleus is not so high, I thought a simpler method such as a plain intensity thresholding could work better for the early embryo movie. I wanted to try this but I didn't have time to do it.
+
+Koichiro
