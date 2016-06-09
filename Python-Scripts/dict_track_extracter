@@ -32,18 +32,38 @@ for Line in File:
 		#OutFile.write ('\t'.join(ext) + '\n')
 		
 		DictTEx[ElementList[2]].append([ ElementList[8], ElementList[9], ElementList[10]])
-		print (DictTEx[ElementList[2]])
+		#print ([ElementList[2]])
+		#print (len(DictTEx[ElementList[2]]))
+		#print (keys)
+		#print (DictTEx[ElementList[10]])
+	Linenumber = Linenumber + 1
 
-f#or ElementList[2] in DictTEx.keys():
-#
-#	if len(DictTEx > 2):
-#		print (DictTEx[ElementList[2]])
-		#if Linenumber == 3:break
-	
-	Linenumber = Linenumber + 1	
-	
-	
+#print (len(DictTEx[ElementList[2]]))
+#print (DictTEx.keys())
 
+for keys in DictTEx.keys():
+	print (keys, len(DictTEx[keys]))
+
+#print (DictTEx['6'])
+	#print ([ElementList[8]])
+	#print (DictTEx[ElementList[8]])
+	#print (DictTEx[ElementList[9]])
+	#print (DictTEx[ElementList[10]])
+
+		#print( 'Track:{} x:{} y:{} z:{}'.format( ElementList[2], ElementList[8], ElementList[9], ElementList[10] ) )
+
+		#print (ElementList[2])
+
+#		if keys = 16:
+#			print ()
+			#if Linenumber == 3:break
+
+#		if len(DictTEx = 16):
+			#print (DictTEx[ElementList[2]])
+			#if Linenumber == 3:break
+	
+		
+	
 
 
 File.close()
