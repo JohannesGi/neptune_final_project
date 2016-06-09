@@ -42,13 +42,14 @@ for Line in File:
 #print (DictTEx.keys())
 
 for keys in DictTEx.keys():
-	file=open('track' + keys + '.txt', 'w')
-	for output in DictTEx[keys]:
-		file.write('Track:{} x:{} y:{} z:{} \n'.format(keys, output[0], output[1], output[2] ) )
+#	file=open('track' + keys + '.txt', 'w')
+#	for output in DictTEx[keys]:
+#		file.write('Track:{} x:{} y:{} z:{} \n'.format(keys, output[0], output[1], output[2] ) )
 
 # Print all keys of the Dictionary
-	#print (keys, len(DictTEx[keys]))
-
+	print ('Tracknumber & length')
+	print(keys, len(DictTEx[keys] ) )
+   
 
 
 #Print any Track with correspnding key (0-16):
