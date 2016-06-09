@@ -42,29 +42,25 @@ for Line in File:
 #print (DictTEx.keys())
 
 for keys in DictTEx.keys():
-	print (keys, len(DictTEx[keys]))
+	file=open('track' + keys + '.txt', 'w')
+	for output in DictTEx[keys]:
+		file.write('Track:{} x:{} y:{} z:{} \n'.format(keys, output[0], output[1], output[2] ) )
 
-#print (DictTEx['6'])
-	#print ([ElementList[8]])
-	#print (DictTEx[ElementList[8]])
-	#print (DictTEx[ElementList[9]])
-	#print (DictTEx[ElementList[10]])
+# Print all keys of the Dictionary
+	#print (keys, len(DictTEx[keys]))
 
-		#print( 'Track:{} x:{} y:{} z:{}'.format( ElementList[2], ElementList[8], ElementList[9], ElementList[10] ) )
 
-		#print (ElementList[2])
 
-#		if keys = 16:
-#			print ()
-			#if Linenumber == 3:break
+#Print any Track with correspnding key (0-16):
+#print (DictTEx['0'])
 
-#		if len(DictTEx = 16):
-			#print (DictTEx[ElementList[2]])
-			#if Linenumber == 3:break
+
 	
-		
-	
-
 
 File.close()
 OutFile.close()
+
+
+
+#for ElementList[2], ElementList[8], ElementList[9], ElementList[10] in DictTEx[keys]:
+#		print ElementList[2], ElementList[8], ElementList[9], ElementList[10]
