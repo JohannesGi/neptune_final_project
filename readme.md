@@ -33,9 +33,7 @@ Each individual track*.txt file can be importet with the python script 'track-vi
 
 The following figures show examples of different tracks visualized with 'track-viewer'.
 
-![Figure 1](./figure_1_track3.png?raw=true)
-![Figure 2](./figure_2_track7.png?raw=true)
-![Figure 3](./figure_3_track13.png?raw=true)
+![Figure 1](./figure_1_track3.png?raw=true) ![Figure 2](./figure_2_track7.png?raw=true) ![Figure 3](./figure_3_track13.png?raw=true)
 
 Figure 1-3 represent the traced nuclear positions of track3, track7 and track13. Note that the nuclear position is highly dynamic during this early stage of embryonic development (16-32 cell stage).
 
