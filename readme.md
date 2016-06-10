@@ -12,8 +12,13 @@ The data I will use are my own data data and come from OpenSPIM live imaging mov
 
 ## Methods
 
-The original z-stack used for this project can be downloaded here (170 MB):
-A maximum z-projection of the movie in from of an .avi file can be seen here: 
+The original z-stack used for this project can be downloaded [here](https://www.dropbox.com/s/shb3zdfc6q9id08/H2AmCh-341x341.tif?dl=0) (170 MB):
+To better understand the original data a maximum z-projection of the movie in from of an .avi file can be seen [here](https://www.dropbox.com/s/c3pf76fmdoftlvv/H2AmCh-341x341_MAX_colored.avi?dl=0). 
+
+Single particle tracking was performed with the [Fiji](http://fiji.sc/) plugin [Trackmate](http://imagej.net/TrackMate) to obtain nuclear position and resulted in the following two tables.
+	
+	- Links.xls
+	- Spots.xls
 
 I will use Python code with regular expressions to open, modify and extract track number and the nuclear positon of the trajectories.
 
