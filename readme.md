@@ -10,26 +10,23 @@ The first step of this project is to generate cell tracking data from a movie. T
 
 The data I will use are my own data data and come from OpenSPIM live imaging movies on which nuclei can be traced. For nuclear detection and tracing the Fiji plugin Trackmate was used on a very short test movie to create a small test data set.
 
-## Methods
+## Methods & Results
 
 The original z-stack used for this project can be downloaded [here](https://www.dropbox.com/s/shb3zdfc6q9id08/H2AmCh-341x341.tif?dl=0) (170 MB):
 To better understand the original data a maximum z-projection of the movie in from of an .avi file can be seen [here](https://www.dropbox.com/s/c3pf76fmdoftlvv/H2AmCh-341x341_MAX_colored.avi?dl=0). 
 
-Single particle tracking was performed with the [Fiji](http://fiji.sc/) plugin [Trackmate](http://imagej.net/TrackMate) to obtain nuclear position saved within the table [Spots.xls](https://github.com/JohannesGi/neptune_final_project/blob/master/Data/Trackmate/original-data/Spots.xls).
+Single particle tracking was performed with the [Fiji](http://fiji.sc/) plugin [Trackmate](http://imagej.net/TrackMate) to obtain nuclear position, which is saved into the table [Spots.xls](https://github.com/JohannesGi/neptune_final_project/blob/master/Data/Trackmate/original-data/Spots.xls).
 	
+#Two Python scripts were written to extract x,y,z coordinates (given in µm) and corresponding tracknames.
+ 	
+ 	1.) Initially the script "track_extractor" uses the following regular expressions (re): '^\d+\t[(+*)]\w.*[(+*)]\t(\d+)\t\d+\t\d+\t\d+\.\d+\t\d+\.\d+\t(\d+\.\d+)\t(\d+\.\d+)\t(\d+\.\d+).+'.
 
-I will use Python code with regular expressions to open, modify and extract track number and the nuclear positon of the trajectories.
+ 	2.) Secondly the script dict_track_extractor_spots was written. The script uses a simple Line.split command to access x,y,z and tracknames. Additionally this code creates a dictionary, which allows to take each track separatly containing all nuclear positions and resaves them as individual .txt files, for example track5.txt
 
-A dictionary was created to make data handling more flexible and allows to gain info such as:
-	
-	- Track lengths
-	
-	- resaving as individual track*.txt files
+ #To quickly check for the total amount of tracks and their individual track lengths the python script 'track_analyser' can be used on Spot.xls files.
 
+Each individual track*.txt file can be importat with the python script track-viewer, which will generate a 3-dimensional plot showing all nuclear positions at once. To do this the [matplotlib](http://matplotlib.org/index.html) has to be [installed](http://matplotlib.org/users/installing.html).
 
-The tools I used were... See analysis files at (links to analysis files).
-
-## Results
 
 ![Figure 1](./Figure1.png?raw=true)
 
