@@ -31,6 +31,13 @@ Two Python scripts were written to extract x,y,z coordinates (given in µm) and 
 Each individual track*.txt file can be importet with the python script 'track-viewer', which will generate a 3-dimensional plot showing all nuclear positions at once. To do this the [matplotlib](http://matplotlib.org/index.html) has to be [installed](http://matplotlib.org/users/installing.html).
 
 
+PythonScript | what it does
+------------ | -------------
+track_extractor | only prints Tracknames and x,y,z positions by using regular expressions
+dict_track_extractor_spots | opens Spot.xls files, extracts Tracknames and x,y,z coordinates, creates a dictionary and resaves the tracks as individual traxk*.txt files.
+track_analyser | lists individual tracks and shows their lengths 
+track-viewer | creates a 3-dimensional plot from track*.txt files
+
 The following figures ([Figure1](https://github.com/JohannesGi/neptune_final_project/blob/master/figure_1_track3.png), [Figure2](https://github.com/JohannesGi/neptune_final_project/blob/master/figure_2_track7.png), [Figure3](https://github.com/JohannesGi/neptune_final_project/blob/master/figure_4_track16.png), [Figure3](https://github.com/JohannesGi/neptune_final_project/blob/master/figure_3_track13.png)) show examples of different tracks visualized with 'track-viewer'.
 Figure 1-3 represent the dynamics of nuclear positions during imaging.
 
@@ -58,3 +65,5 @@ Schindelin, J.; Arganda-Carreras, I. & Frise, E. et al. (2012), "Fiji: an open-s
 
 Jaqaman et al. Robust single-particle tracking in live-cell time-lapse sequences. Nat Methods (2008) vol. 5 (8) pp. 695-702
 
+## Acknowledgments
+I thank eveybody who contributed in making this paractical MAMED course possible!
