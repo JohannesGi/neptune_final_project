@@ -31,11 +31,12 @@ Two Python scripts were written to extract x,y,z coordinates (given in µm) and 
 Each individual track*.txt file can be importet with the python script 'track-viewer', which will generate a 3-dimensional plot showing all nuclear positions at once. To do this the [matplotlib](http://matplotlib.org/index.html) has to be [installed](http://matplotlib.org/users/installing.html).
 
 
-The following figures show examples of different tracks visualized with 'track-viewer'.
+The following figures ([Figure1]((./figure_1_track3.png?raw=true)), [Figure2](./figure_2_track7.png?raw=true), [Figure3](./figure_3_track13.png?raw=true)) show examples of different tracks visualized with 'track-viewer'. Click on the Figure-Links to show original size.
 
-![Figure 1](./figure_1_track3.png?raw=true =150x) ![Figure 2](./figure_2_track7.png?raw=true =150x) ![Figure 3](./figure_3_track13.png?raw=true =150x)
+![Figure 1](./figure_1_track3_small.png?raw=true) ![Figure 2](./figure_2_track7_small.png?raw=true) ![Figure 3](./figure_3_track13_small.png?raw=true)
 
 Figure 1-3 represent the traced nuclear positions of track3, track7 and track13. Note that the nuclear position is highly dynamic during this early stage of embryonic development (16-32 cell stage).
+
 
 ## Discussion
 
