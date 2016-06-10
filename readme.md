@@ -17,15 +17,20 @@ To better understand the original data a maximum z-projection of the movie in fr
 
 Single particle tracking was performed with the [Fiji](http://fiji.sc/) plugin [Trackmate](http://imagej.net/TrackMate) to obtain nuclear position, which is saved into the table [Spots.xls](https://github.com/JohannesGi/neptune_final_project/blob/master/Data/Trackmate/original-data/Spots.xls).
 	
-#Two Python scripts were written to extract x,y,z coordinates (given in µm) and corresponding tracknames.
+Two Python scripts were written to extract x,y,z coordinates (given in µm) and corresponding tracknames.
  	
- 	1.) Initially the script "track_extractor" uses the following regular expressions (re): '^\d+\t[(+*)]\w.*[(+*)]\t(\d+)\t\d+\t\d+\t\d+\.\d+\t\d+\.\d+\t(\d+\.\d+)\t(\d+\.\d+)\t(\d+\.\d+).+'.
+ 	1.) Initially the script "track_extractor" uses the following regular expressions (re):
+ 	'^\d+\t[(+*)]\w.*[(+*)]\t(\d+)\t\d+\t\d+\t\d+\.\d+\t\d+\.\d+\t(\d+\.\d+)\t(\d+\.\d+)\t(\d+\.\d+).+'.
 
- 	2.) Secondly the script dict_track_extractor_spots was written. The script uses a simple Line.split command to access x,y,z and tracknames. Additionally this code creates a dictionary, which allows to take each track separatly containing all nuclear positions and resaves them as individual .txt files, for example track5.txt
+ 	2.) Secondly the script dict_track_extractor_spots was written. The script uses a simple Line.split command
+ 	to access x,y,z and tracknames. Additionally this code creates a dictionary, which allows to take each track
+ 	separatly containing all nuclear positions and resaves them as individual .txt files, for example track5.txt
 
- #To quickly check for the total amount of tracks and their individual track lengths the python script 'track_analyser' can be used on Spot.xls files.
+ To quickly check for the total amount of tracks and their individual track lengths the python script 'track_analyser' can be used on any generated Spot.xls files.
 
-Each individual track*.txt file can be importat with the python script track-viewer, which will generate a 3-dimensional plot showing all nuclear positions at once. To do this the [matplotlib](http://matplotlib.org/index.html) has to be [installed](http://matplotlib.org/users/installing.html).
+Each individual track*.txt file can be importet with the python script 'track-viewer', which will generate a 3-dimensional plot showing all nuclear positions at once. To do this the [matplotlib](http://matplotlib.org/index.html) has to be [installed](http://matplotlib.org/users/installing.html).
+
+
 
 
 ![Figure 1](./Figure1.png?raw=true)
