@@ -33,14 +33,14 @@ Each individual track*.txt file can be importet with the python script 'track-vi
 
 The following figures ([Figure1](https://github.com/JohannesGi/neptune_final_project/blob/master/figure_1_track3.png), [Figure2](https://github.com/JohannesGi/neptune_final_project/blob/master/figure_2_track7.png), [Figure3](https://github.com/JohannesGi/neptune_final_project/blob/master/figure_3_track13.png)) show examples of different tracks visualized with 'track-viewer'. Click on the Figure-Links to show original size.
 
-Figure1                                            |  Figure2
+Figure1 - Track3                                   |  Figure2 - Track7
 :-------------------------------------------------:|:--------------------------------------------------:
 ![Figure 1](./figure_1_track3_small.png?raw=true)  |  ![Figure 2](./figure_2_track7_small.png?raw=true)
 
+Figure3 - Track13
+:-------------------------------------------------:
 ![Figure 3](./figure_3_track13.png?raw=true)
 
-
-![Figure 1](./figure_1_track3_small.png?raw=true) ![Figure 2](./figure_2_track7_small.png?raw=true) ![Figure 3](./figure_3_track13_small.png?raw=true)
 
 Figure 1-3 represent the traced nuclear positions of track3, track7 and track13. Note that the nuclear position is highly dynamic during this early stage of embryonic development (16-32 cell stage).
 
