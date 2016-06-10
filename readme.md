@@ -35,10 +35,10 @@ The following figures ([Figure1](https://github.com/JohannesGi/neptune_final_pro
 
 Figure1 - Track3                                   |  Figure2 - Track7
 :-------------------------------------------------:|:--------------------------------------------------:
-![Figure 1](./figure_1_track3_small.png?raw=true)  |  ![Figure 2](./figure_2_track7_small.png?raw=true)
+![Figure 1](./figure_1_track3.png?raw=true)  |  ![Figure 2](./figure_2_track7.png?raw=true)
 
-Figure3 - Track13
-:-------------------------------------------------:
+Figure3 - Track13                                  |
+:-------------------------------------------------:|
 ![Figure 3](./figure_3_track13.png?raw=true)
 
 
