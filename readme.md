@@ -12,7 +12,7 @@ The data I will use are my own data data and come from OpenSPIM live imaging mov
 
 ## Methods & Results
 
-The original z-stack used for this project can be downloaded [here](https://www.dropbox.com/s/shb3zdfc6q9id08/H2AmCh-341x341.tif?dl=0) (170 MB):
+The original z-stack used for this project can be downloaded [here](https://www.dropbox.com/s/shb3zdfc6q9id08/H2AmCh-341x341.tif?dl=0) (170 MB).
 To better understand the original data a maximum z-projection of the movie in from of an .avi file can be seen [here](https://www.dropbox.com/s/c3pf76fmdoftlvv/H2AmCh-341x341_MAX_colored.avi?dl=0). 
 
 Single particle tracking was performed with the [Fiji](http://fiji.sc/) plugin [Trackmate](http://imagej.net/TrackMate) to obtain nuclear position, which is saved into the table [Spots.xls](https://github.com/JohannesGi/neptune_final_project/blob/master/Data/Trackmate/original-data/Spots.xls).
@@ -31,11 +31,13 @@ Two Python scripts were written to extract x,y,z coordinates (given in µm) and 
 Each individual track*.txt file can be importet with the python script 'track-viewer', which will generate a 3-dimensional plot showing all nuclear positions at once. To do this the [matplotlib](http://matplotlib.org/index.html) has to be [installed](http://matplotlib.org/users/installing.html).
 
 
+The following figures show examples of different tracks visualized with 'track-viewer'.
 
+![Figure 1](./figure_1_track3.png?raw=true)
+![Figure 2](./figure_2_track7.png?raw=true)
+![Figure 3](./figure_3_track13.png?raw=true)
 
-![Figure 1](./Figure1.png?raw=true)
-
-In Figure 1...
+Figure 1-3 represent the traced nuclear positions of track3, track7 and track13. Note that the nuclear position is highly dynamic during this early stage of embryonic development (16-32 cell stage).
 
 ## Discussion
 
