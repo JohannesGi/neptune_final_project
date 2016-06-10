@@ -8,7 +8,7 @@ The goal of my project is to work with positional data obtained from migrating a
 
 The first step of this project is to generate cell tracking data from a movie. The I will use python to open and read .xls files that were produced with Trackmate and contain the trajectory information. Tracks will be re-saved as individual text files. After this pre-processing step the data will be available for further processing.
 
-The data I will use are my own data data and come from OpenSPIM live imaging movies on which nuclei can be traced. For nuclear detection and tracing the Fiji plugin Trackmate was used on a very short test movie to create a small test data set.
+The data I will use are my own data data and come from OpenSPIM live imaging movies on which nuclei can be traced. For nuclei detection and tracing the Fiji plugin Trackmate was used on a very short test movie to create a small test data set.
 
 ## Methods & Results
 
@@ -46,12 +46,15 @@ Figure3 - Track13                                  |  Figure4 - Track16
 
 ## Discussion
 
-These results indicate...
+The above descirbed workflow now allows me to extract, modify and visualize data coming from my own live-imaging movies, which have been previously tracked by single particel tracking or any other algorithm capable of detecting nuclei position.
 
-The biggest difficulty in implementing these analyses was...
+As a beginner in python coding, I personally found it challenging to write a robust, more efficient and easy understandable code that allows me to extracting and modify wanted infromation. Without the fantastic help of Elija, August and Steven, this project became a lot of fun once the scateboard was rolling.
 
-If I did these analyses again, I would...
+If I did these analyses again, I would search for better visualization tools, that allow me to colour-label and track multiple nuclei over time. Additionally the track_analyser should be improved to get out better statistics of individual trajectories.
 
 ## References
 
+Schindelin, J.; Arganda-Carreras, I. & Frise, E. et al. (2012), "Fiji: an open-source platform for biological-image analysis", Nature methods 9(7): 676-682, PMID 22743772 (on Google Scholar).
+
+Jaqaman et al. Robust single-particle tracking in live-cell time-lapse sequences. Nat Methods (2008) vol. 5 (8) pp. 695-702
 
