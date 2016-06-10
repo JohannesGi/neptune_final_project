@@ -31,17 +31,17 @@ Two Python scripts were written to extract x,y,z coordinates (given in µm) and 
 Each individual track*.txt file can be importet with the python script 'track-viewer', which will generate a 3-dimensional plot showing all nuclear positions at once. To do this the [matplotlib](http://matplotlib.org/index.html) has to be [installed](http://matplotlib.org/users/installing.html).
 
 
-The following figures ([Figure1](https://github.com/JohannesGi/neptune_final_project/blob/master/figure_1_track3.png), [Figure2](https://github.com/JohannesGi/neptune_final_project/blob/master/figure_2_track7.png), [Figure3](https://github.com/JohannesGi/neptune_final_project/blob/master/figure_3_track13.png)) show examples of different tracks visualized with 'track-viewer'. Click on the Figure-Links to show original size.
-
+The following figures ([Figure1](https://github.com/JohannesGi/neptune_final_project/blob/master/figure_1_track3.png), [Figure2](https://github.com/JohannesGi/neptune_final_project/blob/master/figure_2_track7.png), [Figure3](https://github.com/JohannesGi/neptune_final_project/blob/master/figure_4_track16.png), [Figure3](https://github.com/JohannesGi/neptune_final_project/blob/master/figure_3_track13.png)) show examples of different tracks visualized with 'track-viewer'.
 Figure 1-3 represent the dynamics of nuclear positions during imaging.
+
 
 Figure1 - Track3                                   |  Figure2 - Track7
 :-------------------------------------------------:|:--------------------------------------------------:
-![Figure 1](./figure_1_track3.png?raw=true)  |  ![Figure 2](./figure_2_track7.png?raw=true)
+![Figure 1](./figure_1_track3.png?raw=true)        |  ![Figure 2](./figure_2_track7.png?raw=true)
 
-Figure3 - Track13                                  |
-:-------------------------------------------------:|
-![Figure 3](./figure_3_track13.png?raw=true)
+Figure3 - Track13                                  |  Figure4 - Track16
+:-------------------------------------------------:|:--------------------------------------------------:
+![Figure 3](./figure_3_track13.png?raw=true)       |  ![Figure 4](./figure_4_track16.png?raw=true)
 
 
 ## Discussion
