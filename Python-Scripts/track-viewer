@@ -4,34 +4,23 @@ from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
 import sys
 import re
-#FileName = sys.argv[ 1 ]
-
-
-
-print("Johannes eats a lot of cucumbers")
 
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 
-#InFilename = open( FileName, 'r')
-InFilename = open('track0.txt')
-
+FileName = sys.argv[ 1 ]
+InFilename = open( FileName, 'r')
+#InFilename = open('track12.txt')
 
 SearchString = '^.+x:([\d\.]+) y:([\d\.]+) z:([\d\.]+)'
 x,y,z =[],[],[]
 for trackxyz in InFilename:
-	print (trackxyz)
+
 	Result = re.search( SearchString, trackxyz )
 	x.append(float(Result.group(1)))
 	y.append(float(Result.group(2)))
 	z.append(float(Result.group(3)))
-
-#print (x,y,z)
-
-#x = [141.451]
-#y = [78.402]
-#z = [1.952]
-
+	#print (x,y,z)
 
 ax.scatter(x, y, z, c='r', marker='o')
 

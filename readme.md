@@ -8,9 +8,12 @@ The goal of my project is to work with positional data obtained from migrating a
 
 The first step of this project is to generate cell tracking data from a movie. The I will use python to open and read .xls files that were produced with Trackmate and contain the trajectory information. Tracks will be re-saved as individual text files. After this pre-processing step the data will be available for further processing.
 
-The data I will use are my own data data and come from OpenSPIM live imaging movies on which nuclei can be traced. For nuclear detection a gradient vector diffusion algorithm proposed by Li et al. 2007 was used. Additionally I will use the Fiji plugin Trackmate on a very short test movie to create my own small test data set.
+The data I will use are my own data data and come from OpenSPIM live imaging movies on which nuclei can be traced. For nuclear detection and tracing the Fiji plugin Trackmate was used on a very short test movie to create a small test data set.
 
 ## Methods
+
+The original z-stack used for this project can be downloaded here (170 MB):
+A maximum z-projection of the movie in from of an .avi file can be seen here: 
 
 I will use Python code with regular expressions to open, modify and extract track number and the nuclear positon of the trajectories.
 
