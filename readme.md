@@ -24,7 +24,7 @@ Two Python scripts were written to extract x,y,z coordinates (given in µm) and 
 
  	2.) Secondly the script dict_track_extractor_spots was written. The script uses a simple Line.split command
  	to access x,y,z and tracknames. Additionally this code creates a dictionary, which allows to take each track
- 	separatly containing all nuclear positions and resaves them as individual .txt files, for example track5.txt
+ 	separately containing all nuclear positions and re-saves them as individual .txt files, for example track5.txt
 
  To quickly check for the total amount of tracks and their individual track lengths the python script 'track_analyser' can be used on any generated Spot.xls files.
 
@@ -34,7 +34,7 @@ Each individual track*.txt file can be importet with the python script 'track-vi
 PythonScript | what it does
 ------------ | -------------
 track_extractor | only prints Tracknames and x,y,z positions by using regular expressions
-dict_track_extractor_spots | opens Spot.xls files, extracts Tracknames and x,y,z coordinates, creates a dictionary and resaves the tracks as individual traxk*.txt files.
+dict_track_extractor_spots | opens Spot.xls files, extracts Tracknames and x,y,z coordinates, creates a dictionary and re-saves the tracks as individual track*.txt files.
 track_analyser | lists individual tracks and shows their lengths 
 track-viewer | creates a 3-dimensional plot from track*.txt files
 
@@ -53,9 +53,9 @@ Figure3 - Track13                                  |  Figure4 - Track16
 
 ## Discussion
 
-The above descirbed workflow now allows me to extract, modify and visualize data coming from my own live-imaging movies, which have been previously tracked by single particel tracking or any other algorithm capable of detecting nuclei position.
+The above described work-flow now allows me to extract, modify and visualize data coming from my own live-imaging movies, which have been previously tracked by single particle tracking or any other algorithm capable of detecting nuclei position.
 
-As a beginner in python coding, I personally found it challenging to write a robust, more efficient and easy understandable code that allows me to extracting and modify wanted infromation. Without the fantastic help of Elija, August and Steven, this project became a lot of fun once the scateboard was rolling.
+As a beginner in python coding, I personally found it challenging to write a robust, more efficient and easy understandable code that allows me to extracting and modify wanted information. Without the fantastic help of Elija, August and Steven, this project became a lot of fun once the skateboard was rolling.
 
 If I did these analyses again, I would search for better visualization tools, that allow me to colour-label and track multiple nuclei over time. Additionally the track_analyser should be improved to get out better statistics of individual trajectories.
 
